@@ -1,0 +1,27 @@
+{
+  "name": "modbot",
+  "main": "index.js",
+  "author": "Funny#0666",
+  "version": "1.0.0",
+  "description": "By Funny",
+  "dependencies": {
+    "discord-buttons": "^4.0.0-deprecated",
+    "discord-logs": "^2.2.1",
+    "discord-toolbox": "^1.1.5",
+    "discord.js": "^13.12.0",
+    "discordjs-button-pagination": "^3.0.1",
+    "fasterbots-v2": "^1.0.5",
+    "fs": "^0.0.1-security",
+    "glob": "^7.1.7",
+    "moment": "^2.29.4",
+    "moment-duration": "^0.0.6",
+    "moment-duration-format": "^2.3.2",
+    "mongoose": "^6.10.0",
+    "ms": "^2.1.3",
+    "node-fetch2": "^1.6.3",
+    "parsec": "^2.0.2",
+    "quick.db": "^7.1.3",
+    "randomstring": "^1.2.3",
+    "request": "^2.88.2"
+  }
+}

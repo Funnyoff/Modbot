@@ -1,0 +1,17 @@
+Bonjour, ce script à été développé par Funny#0666. C'est un bot de modération entièrement en slash commands
+
+Pour le démarrer rien de plus simple
+
+Commencer par ouvrir un terminal de commande et faites la comamnde: npm i
+
+Rendez vous dans le fichier config.json
+
+Modifier le token de votre bot dans la ligne:
+token: 'token du bot'
+
+modifier l'id dans la ligne:
+owner: 'votre id'
+
+Une fois fait vous pouvez lancer votre bot en revenant sur votre terminal de commande et en faisant node .
+
+Support Dev community: https://discord.gg/rqA47zef5B
