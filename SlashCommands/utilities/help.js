@@ -28,27 +28,27 @@ module.exports = {
           {
             label: 'Accueil',
             emoji: '🏘️',
-            value: 'accueille',
+            value: 'accueille' + message.id,
           },
           {
             label: 'Configuration',
             emoji: '⚙️',
-            value: 'config',
+            value: 'config + message.id',
           },
           {
             label: 'Info',
             emoji: 'ℹ️',
-            value: 'info',
+            value: 'info + message.id',
           },
           {
             label: 'Modération',
             emoji: '🔨',
-            value: 'mod',
+            value: 'mod + message.id',
           },
           {
             label: 'Permission',
             emoji: '📙',
-            value: 'perm',
+            value: 'perm + message.id',
           }
         ])
     )
