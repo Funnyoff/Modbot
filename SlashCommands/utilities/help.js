@@ -199,19 +199,19 @@ module.exports = {
         collected.deferUpdate()
         const value = collected.values[0];
 
-        if (value === "accueille") {
+        if (value === "accueille" + message.id) {
           collected.message.edit({ embeds: [Help], components: [row] });
         }
-        if (value === "config") {
+        if (value === "config" + message.id) {
           collected.message.edit({ embeds: [funnyconfig], components: [row] });
         }
-        if (value === "info") {
+        if (value === "info" + message.id) {
           collected.message.edit({ embeds: [funnyuti], components: [row] });
         }
-        if (value === "mod") {
+        if (value === "mod" + message.id) {
           collected.message.edit({ embeds: [funnymod], components: [row] });
         }
-        if (value === "perm") {
+        if (value === "perm" + message.id) {
           collected.message.edit({ embeds: [funnyperm], components: [row] });
         }
       })
